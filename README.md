@@ -17,7 +17,7 @@
 
 ---
 
-## � FOverview
+## Overview
 
 Transform the way you interact with documents! **Smart PDF Chatbot** leverages cutting-edge **Retrieval-Augmented Generation (RAG)** technology to let you have natural conversations with your PDF files. Upload your documents, ask questions, and get precise answers backed by your actual content.
 
