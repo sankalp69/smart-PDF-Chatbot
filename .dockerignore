@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation (optional - remove if you want them in container)
+*.md
+!README.md
+
+# Environment variables (IMPORTANT - never include in image)
+.env
+.env.*
+
+# Data directories (will be mounted as volumes)
+data/
+chat_history/
+faiss_cache/
+
+# Test files
+tests/
+test_*.py
+*_test.py
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

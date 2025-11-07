@@ -1,0 +1,29 @@
+version: '3.8'
+
+# Development override for docker-compose.yml
+# Usage: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+
+services:
+  smart-pdf-chatbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    volumes:
+      # Mount source code for hot reload
+      - ./app.py:/app/app.py
+      - ./rag_pipeline.py:/app/rag_pipeline.py
+      - ./chat_gemini.py:/app/chat_gemini.py
+      - ./vectorstore_manager.py:/app/vectorstore_manager.py
+      - ./history_manager.py:/app/history_manager.py
+      - ./session_manager.py:/app/session_manager.py
+    environment:
+      - STREAMLIT_SERVER_FILE_WATCHER_TYPE=poll
+      - STREAMLIT_SERVER_RUN_ON_SAVE=true
+    command: >
+      streamlit run app.py
+      --server.port=8501
+      --server.address=0.0.0.0
+      --server.fileWatcherType=poll
+      --server.runOnSave=true
+      --browser.gatherUsageStats=false
