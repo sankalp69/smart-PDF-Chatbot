@@ -221,7 +221,7 @@ Contributions are welcome!
 
 ## 👨‍💻 Author
 
-**Chandan Aruk**
+**Sankalp Patekar**
 📊 Data Analyst | 💡 AI & Data Science Enthusiast
 
-📧 Linkedin [https://linkedin.com/in/chandan-aruk]
+📧 Linkedin [https://www.linkedin.com/in/sankalp-patekar/]
