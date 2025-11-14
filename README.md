@@ -455,7 +455,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Chandan Aruk**
+**Sankalp Patekar**
 📊 Data Analyst | 💡 AI & Data Science Enthusiast
 
 📧 Linkedin [https://www.linkedin.com/in/sankalp-patekar/]
